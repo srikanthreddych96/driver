@@ -1,0 +1,163 @@
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden; /* Prevents the entire page from scrolling */
+}
+
+.sidebar {
+  position: fixed; /* Keep the sidebar fixed */
+  top: 0;
+  left: 0;
+  width: 250px; /* Set the width of the sidebar */
+  height: 100vh; /* Sidebar takes full height of the viewport */
+  background-color: #2C3E50;
+  z-index: 1000; /* Ensures the sidebar stays above other content */
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+  margin-left: 250px; /* Offset the content area by the sidebar width */
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #ECF0F1;
+  overflow-y: auto; /* Enables scrolling within the content area */
+  width: calc(100vw - 250px); /* Adjust content width to fit next to the sidebar */
+}
+
+.profile-section {  
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.employee-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ECF0F1;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #BDC3C7;
+  margin: 20px 0;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.3s;
+  color: white;
+}
+
+.menu li:hover {
+  background: #f08902;
+  border-radius: 9px;     
+}
+
+.menu li .icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  padding: 15px 100px;
+  background: #e74c3c;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 10px;
+  position: relative;
+  bottom: 40px; /* Move the button slightly up */
+}
+
+.logout:hover {
+  background: #605857;
+  color: white; /* Keep text color white on hover */
+}
+
+.logout:active {
+  color: white; /* Ensure text color remains white when clicked */
+}
+
+.logout .icon {
+  margin-right: 5px;
+}
+
+
+/* Additional Styles for Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    position: relative; /* Make sidebar scrollable along with content */
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .main-content {
+    margin-left: 0;
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .profile {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .employee-name {
+    font-size: 14px;
+  }
+  
+  .menu li {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+  
+  .user-table th, .user-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+}

@@ -1,0 +1,135 @@
+.home-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .profile-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .profile-section1 {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+    max-width: 100%;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .profile-pic {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+  }
+  
+  .vehicle-details {
+    color: #333;
+  }
+  
+  .vehicle-details h3 {
+    margin-bottom: 15px;
+    color: #007bff; /* Primary color for headings */
+  }
+  
+  .vehicle-details p {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .vehicle-details p strong {
+    margin-left: 5px;
+  }
+  
+  .metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Reduced gap */
+  }
+  
+  .metric {
+    background: linear-gradient(135deg, #558cb6, #e0e0e0);
+    padding: 10px; /* Reduced padding */
+    border-radius: 6px; /* Slightly smaller radius */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Smaller shadow */
+    flex: 1;
+    min-width: 120px; /* Smaller minimum width */
+    max-width: 200px; /* Smaller maximum width */
+    text-align: center;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .metric-icon {
+    font-size: 20px; /* Smaller icon size */
+    color: #007bff; /* Primary color for icons */
+    margin-bottom: 8px; /* Reduced margin */
+  }
+  
+  .metric h2 {
+    font-size: 16px; /* Smaller heading size */
+    margin: 5px 0;
+    color: #333;
+  }
+  
+  .metric p {
+    margin: 0;
+    font-size: 12px; /* Smaller font size */
+    color: #333;
+  }
+  
+  .metric-value {
+    font-size: 18px; /* Smaller value size */
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .chart-section {
+    margin-top: 20px;
+  }
+  
+  .recently-enabled-drivers {
+    margin-top: 20px;
+  }
+  
+  .drivers-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .drivers-table th, .drivers-table td {
+    border: 1px solid #e0e0e0;
+    padding: 8px; /* Reduced padding */
+    text-align: center;
+    color: #333;
+  }
+  
+  .drivers-table th {
+    background-color: #007bff; /* Primary color for table headings */
+    color: #ffffff;
+  }
+  
+  @media (max-width: 768px) {
+    .profile-section {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .profile-pic {
+      margin-bottom: 15px;
+    }
+  
+    .metrics {
+      flex-direction: column;
+    }
+  }
+  

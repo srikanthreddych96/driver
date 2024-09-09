@@ -1,0 +1,52 @@
+.create-user-container {
+  margin-top: 20px;
+}
+
+.create-user-form {
+  margin-bottom: 20px;
+}
+
+.create-user-form h2 {
+  margin-bottom: 10px;
+}
+
+.create-user-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.create-user-form input,
+.create-user-form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #BDC3C7;
+  border-radius: 4px;
+}
+
+.create-user-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #2C3E50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.create-user-form button:hover {
+  background-color: #1C2833;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.form-row label {
+  flex: 1;
+}

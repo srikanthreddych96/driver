@@ -1,0 +1,151 @@
+/* General Styles */
+.notifications-container {
+  background: #f4f4f4;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.notifications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.notifications-header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mark-all-button, .notifications-popup-button {
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  border: none;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.notifications-popup-button {
+  position: relative;
+}
+
+.notifications-popup {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto;
+  width: 200px;
+  z-index: 10;
+}
+
+.notifications-popup ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.notification-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.notification-item.read {
+  background: #e0e0e0;
+  color: #666;
+}
+
+.notification-section {
+  margin-bottom: 20px;
+}
+
+.notification-section h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.notification-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notification-section li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.notification-icon {
+  font-size: 24px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .notifications-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .notifications-header-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .notifications-popup {
+    width: 100%;
+    max-width: 300px;
+    left: 0;
+    right: 0;
+  }
+
+  .notification-item {
+    font-size: 14px;
+  }
+
+  .notification-section h3 {
+    font-size: 16px;
+  }
+
+  .notifications-popup-button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .notification-icon {
+    font-size: 20px;
+  }
+
+  .mark-all-button, .notifications-popup-button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .notifications-popup {
+    max-height: 150px;
+    font-size: 12px;
+  }
+
+  .notification-section h3 {
+    font-size: 14px;
+  }
+}
